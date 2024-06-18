@@ -1,0 +1,11 @@
+--- PKGBUILD
++++ PKGBUILD
+@@ -12,7 +12,7 @@ license=('MPL-2.0')
+ # See "engines" in https://github.com/mozilla/web-ext/blob/master/package.json
+ # XXX: somehow nodejs 20 breaks tests
+ # Per https://extensionworkshop.com/documentation/develop/getting-started-with-web-ext/, web-ext requires the current LTS (long-term support) versions of NodeJS.
+-depends=('nodejs>=16.0.0' 'nodejs<20')
++depends=('nodejs>=16.0.0' 'nodejs<20' 'python')
+ makedepends=('npm' 'node-gyp')
+ replaces=('nodejs-web-ext')
+ provides=('nodejs-web-ext')
